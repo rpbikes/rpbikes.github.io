@@ -1,6 +1,52 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 p.clear {clear: both}
 
 .container {
@@ -46,38 +92,37 @@ header {
 		bottom:0;
 		left:20%;
 		position: absolute;
-		width:60%;
+
 		margin: auto;
 		margin-top: .2em;
 		text-align: justify;
-		a {
-		  text-color:$color_nav_text;
-		  background-color:$color_nav_a_background;
-			box-shadow: 0px 14px 10px -10px rgba(0,0,0,0.44);
-			display: inline-block;
-			text-decoration: none;
-			border: 1px solid black;
-			border-radius: 10%;
-			padding: .2em 1em;
-			font-size: 1.4em;
-			&:visited {
-				color: $color_nav_text_visited;
-			}
-			&:hover {
-				transform: scale(1.05);
-				color: $color_nav_text_hover;
-				animation-name: nav_a_hover;
-				animation-duration: .5s;
-				background-color: $color_nav_a_background_hover;
-			}
-			&:active {
+		li.myclass:last-child {
+			a {
+			  text-color:$color_nav_text;
+			  background-color:$color_nav_a_background;
+				box-shadow: 0px 14px 10px -10px rgba(0,0,0,0.44);
+				display: inline-block;
+				text-decoration: none;
+				border: 1px solid black;
+				border-radius: 10%;
+				padding: .2em 1em;
+				font-size: 1.4em;
+				&:visited {
+					color: $color_nav_text_visited;
+				}
+				&:hover {
+					transform: scale(1.05);
+					color: $color_nav_text_hover;
+					animation-name: nav_a_hover;
+					animation-duration: .5s;
+					background-color: $color_nav_a_background_hover;
+				}
+				&:active {
 
+				}
 			}
 		}
-		&:after {
-			content: '';
-			width: 100%; /* Ensures justification for single lines */
-			display: inline-block;
+		li:last-child {
 		}
 	}
 }
@@ -91,5 +136,104 @@ header {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+a {
+	text-decoration: none;
+}
+	h1, ul, li, nav { 
+		display: inline-block;
+		vertical-align:top; 
+}
+nav {
+	li:last-child  {
+		a {
+			  text-color:$color_nav_text;
+			  background-color:$color_nav_a_background;
+				box-shadow: 0px 14px 10px -10px rgba(0,0,0,0.44);
+				display: inline-block;
+				text-decoration: none;
+				border: 1px solid black;
+				border-radius: 10%;
+				padding: .2em 1em;
+				font-size: 1.4em;
+				&:visited {
+					color: $color_nav_text_visited;
+				}
+				&:hover {
+					transform: scale(1.05);
+					color: $color_nav_text_hover;
+					animation-name: nav_a_hover;
+					animation-duration: .5s;
+					background-color: $color_nav_a_background_hover;
+				}
+				&:active {
+
+				}
+			}
+		margin: 1vw;
+	}
+	h1 {
+		margin: 1em;
+	}
+	img {
+		//width:  13vw;
+    height: 22vh;
+	}
+	/*expanding to containg element width*/
+	width: 100%;
+	//ul {
+		/*getting rid of bullets*/
+		img {
+			width: 20vw;
+		}
+
+	li {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			list-style-type: none;
+	}
+
+		/*leave these here for image bulletions*/
+		#bike-img {  
+			width: 20vw;
+		}
+		#about-img { 
+			width: 5vw;
+		}
+		#contact-img { 
+			width: 7.5vw;
+		}
+	//}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
