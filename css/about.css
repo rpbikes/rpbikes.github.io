@@ -115,5 +115,9 @@ p.clear {clear: both;}
   #logo {
     width: 17.5%;
   }
+  .nav-links {
+  	font-size:2em;
+  	padding: .5em 1.4em;
+  }
 }
 
